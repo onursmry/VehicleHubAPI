@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\" />
+    <Folder Include="Constants\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VehicleHub.Core\VehicleHub.Core.csproj" />
+    <ProjectReference Include="..\VehicleHub.DataAccess\VehicleHub.DataAccess.csproj" />
+    <ProjectReference Include="..\VehicleHub.Entities\VehicleHub.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

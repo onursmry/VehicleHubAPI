@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleHubAPI", "VehicleHubAPI\VehicleHubAPI.csproj", "{FB1BE082-E385-4C76-91A0-5C11A4CAA26E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3207B123-C4CB-43A5-82D3-FA8972BD47DD} = {3207B123-C4CB-43A5-82D3-FA8972BD47DD}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleHub.Entities", "VehicleHub.Entities\VehicleHub.Entities.csproj", "{102F1906-1350-43BD-9BFA-85558B27889A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F} = {EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleHub.DataAccess", "VehicleHub.DataAccess\VehicleHub.DataAccess.csproj", "{27055097-834E-46A1-92A9-FB9EC4167424}"
+	ProjectSection(ProjectDependencies) = postProject
+		{102F1906-1350-43BD-9BFA-85558B27889A} = {102F1906-1350-43BD-9BFA-85558B27889A}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleHub.Core", "VehicleHub.Core\VehicleHub.Core.csproj", "{EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleHub.Business", "VehicleHub.Business\VehicleHub.Business.csproj", "{3207B123-C4CB-43A5-82D3-FA8972BD47DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{102F1906-1350-43BD-9BFA-85558B27889A} = {102F1906-1350-43BD-9BFA-85558B27889A}
+		{27055097-834E-46A1-92A9-FB9EC4167424} = {27055097-834E-46A1-92A9-FB9EC4167424}
+		{EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F} = {EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB1BE082-E385-4C76-91A0-5C11A4CAA26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1BE082-E385-4C76-91A0-5C11A4CAA26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1BE082-E385-4C76-91A0-5C11A4CAA26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1BE082-E385-4C76-91A0-5C11A4CAA26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102F1906-1350-43BD-9BFA-85558B27889A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102F1906-1350-43BD-9BFA-85558B27889A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102F1906-1350-43BD-9BFA-85558B27889A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102F1906-1350-43BD-9BFA-85558B27889A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27055097-834E-46A1-92A9-FB9EC4167424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27055097-834E-46A1-92A9-FB9EC4167424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27055097-834E-46A1-92A9-FB9EC4167424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27055097-834E-46A1-92A9-FB9EC4167424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3956BF-E3B8-4F1C-BEBB-BE8D067A241F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3207B123-C4CB-43A5-82D3-FA8972BD47DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3207B123-C4CB-43A5-82D3-FA8972BD47DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3207B123-C4CB-43A5-82D3-FA8972BD47DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3207B123-C4CB-43A5-82D3-FA8972BD47DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52C70B0F-8996-4891-AE40-7DAE8BFE2722}
+	EndGlobalSection
+EndGlobal
